@@ -1,0 +1,80 @@
+npm i -g @angular/cli
+tsc filename.ts
+node filename (ts or js)
+
+nodemon filename
+ng new learn-angular
+
+https://code.visualstudio.com/docs/editor/emmet
+
+declaration :- Component, Directives, Pipes
+providers - Servcies
+bootstrap
+
+<h1>{{title}}</h1>
+interpolation
+
+<img src="{{imgPath}}" alt="image not found">
+interpolation 
+
+<img [src]="imgPath" alt="image not found">
+property binding
+
+https://angular.io/guide/user-input
+
+https://unsplash.com/s/photos/pic
+
+event binding starts with round bracket
+
+Directives
+
+ng generate / ng g
+ng generate component <file_name>/ ng g c <file_name>
+ng serve --host <ip_address>
+
+Parent to child
+@Input
+Child to Parent
+@Output
+
+https://github.com/shakil-576/angular9-component
+https://codecraft.tv/courses/angular/custom-directives/creating-a-custom-directive/
+
+@Input - Parent to child interaction (send data from parent  to child)
+@Output - Child to parent interaction (send data from child to parent)
+
+
+
+Services
+1) Use @Injectable when my current service uses other service though dependency injection
+2)  providedIn: "root" is used to avoid manual registration of the service in app.module,ts providers section
+We can use our class as service also without @Injectable
+
+ java code below:
+ 
+public static void main(String[] args) {
+		String result = Optional.of("test")
+		.map(test -> test.toUpperCase())
+		.map(test -> test + " Upper case converted")
+		.get();
+		
+		System.out.print(result);
+	}
+
+	
+	back to angular
+	Commmand o migrate angualr app to another version
+	website
+	https://update.angular.io/#9.0:10.0
+	ng update @angular/core @angular/cli
+	
+	
+	
+	For migrating Angular 9 to Angular 10
+	Update Typescript like below:
+	>npm i -D typescript@3.9
+	
+	Then also update your tgconfig file name and location like  "tsConfig": "./tsconfig.json", iin angular.json
+	
+	
+	
